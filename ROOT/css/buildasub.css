@@ -1,0 +1,192 @@
+body{
+    background-image: url(../assets/f1e6ba146633325.62b3a32a52f1f.jpg);
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 100px;
+}
+
+#overlay{
+    height: 400px;
+    width: 70%;
+    background-color: rgba(174, 0, 255, 0.185);
+    border-radius: 100px;
+    padding-left: 60px;
+    margin-left: 50px;
+}
+
+
+.header{
+    width: 100%;
+    height: 780px;
+    background-size: cover;
+    background-position: center;
+}
+
+.placeholder{
+    color: aliceblue;
+}
+
+.form-style{
+    border-radius: 30px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+
+}
+
+.button img{
+    margin-bottom: 4px;
+    margin-right: 0.5px;
+}
+
+.jumbosection{
+    margin-top: 110px;
+    color: white;
+    margin-left: -60px;
+}
+
+.my-4{
+    background-color: white;
+    
+}
+
+.jumbosection h1{
+    font-family: 'Wendy One', sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+.jumbosection p{
+    text-align: center;
+    color: white;
+}
+
+.jumbosection h6{
+    text-align: center;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 20px;
+}
+
+.jumbosection h5{
+    text-align: center;
+    margin-top: -20px;
+    font-family: 'Pangolin', cursive;
+    color: orange;
+}
+
+.btn{
+    margin-top: 40px;
+    margin-right: 15px;
+    border-radius: 30px;
+    width: 170px;
+    height: 40px;
+    padding-top: 4px;
+    font-family: 'Pangolin', cursive;
+}
+
+.col-box{
+    margin-right: 150px;
+    padding-right: 100px;
+    padding-top: 80px;
+    padding-left: 40px;
+}
+
+.col-box img{
+    border-radius: 50px;
+}
+
+.about{
+    width: 100%;
+    height: 1400px;
+    margin-top: 70px;
+}
+
+.card{
+    float: right;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+
+.month{
+    margin-left: 100px;
+    margin-right: 110px;
+}
+
+.month h1{
+    color:  orange;
+    padding-left: 500px;
+    padding-top: 60px;
+    padding-bottom: 5px;
+    margin-bottom: -20px;
+    font-family: 'Wendy One', sans-serif;
+}
+
+.jumbobox{
+    width: 500px;
+    height: 400px;
+    margin-left: 170px;
+    margin-right: 150px;
+    border-radius: 30px;
+    padding-bottom: 5px;
+}
+
+.jumbobox h1,p{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: black;
+}
+
+.jumbobox h1{
+    font-family: 'Wendy One', sans-serif;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+}
+
+.my-44{
+    background-color: orange;
+    width: 90%;
+}
+
+.first{
+    background-color: white;
+}
+
+.my-444{
+    background-color: orange;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.my-4444{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.942);
+}
+
+
+.col-12{
+    width: 100%;
+    height: 600px;
+    background-image: url("//ROOT/assets/aboutback.png");
+    background-position: cover;
+}

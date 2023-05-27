@@ -1,5 +1,5 @@
 body{
-    background-image: url("/ROOT/assets/backback.jpeg");
+    background-image: url(../assets/f1e6ba146633325.62b3a32a52f1f.jpg);
     background-size: cover;
 }
 
@@ -9,16 +9,15 @@ footer{
     
 }
 
-#overlay{
-    height: 780px;
-    background-color: rgba(0, 0, 0, 0.634);
+nav{
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 100px;
 }
 
 
 .header{
     width: 100%;
     height: 780px;
-    background-image:url(../assets/headerfeature.png);
     background-size: cover;
     background-position: center;
 }
@@ -50,9 +49,20 @@ footer{
 }
 
 .jumbosection{
-    margin-top: 130px;
+    width: 100%;
+    margin-top: 20px;
     color: white;
-    margin-left: -100px;
+    margin-left: -60px;
+}
+
+.jumbosection img{
+    margin-top: -350px;
+    margin-left: -200px;
+}
+
+.jumbosection a{
+    margin-top: -10px;
+
 }
 
 .my-4{
@@ -64,9 +74,11 @@ footer{
     font-family: 'Wendy One', sans-serif;
     font-size: 80px;
     text-align: center;
+    color: rgb(255, 166, 0);
 }
 .jumbosection p{
     text-align: center;
+    color: white;
 }
 
 .jumbosection h6{
@@ -106,14 +118,7 @@ footer{
 .about{
     width: 100%;
     height: 1400px;
-}
-
-.liner{
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    margin-bottom: 80px;
-
+    margin-top: 70px;
 }
 
 .card{
@@ -139,17 +144,17 @@ footer{
 .jumbobox{
     width: 500px;
     height: 400px;
-    color: rgb(255, 255, 255);
-    margin-left: 140px;
+    margin-left: 170px;
     margin-right: 150px;
-    background-color: rgba(255, 166, 0, 0.732);
     border-radius: 30px;
+    padding-bottom: 5px;
 }
 
 .jumbobox h1,p{
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 20px;
+    color: black;
 }
 
 .jumbobox h1{
@@ -179,5 +184,13 @@ footer{
 .my-4444{
     width: 50%;
     background-color: rgba(255, 255, 255, 0.942);
+}
+
+
+.col-12{
+    width: 100%;
+    height: 600px;
+    background-image: url("//ROOT/assets/aboutback.png");
+    background-position: cover;
 }
 
