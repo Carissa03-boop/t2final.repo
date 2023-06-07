@@ -6,6 +6,7 @@ body{
 footer{
     width: 100%;
     height: 200px;
+    color: aqua;
     
 }
 
@@ -14,147 +15,72 @@ nav{
     height: 100px;
 }
 
-#overlay{
-    height: 400px;
-    width: 70%;
-    background-color: rgba(174, 0, 255, 0.185);
-    border-radius: 100px;
-    padding-left: 60px;
-    margin-left: 50px;
-}
-
-
-.header{
-    width: 100%;
-    height: 780px;
-    background-size: cover;
-    background-position: center;
-}
-
-.placeholder{
+.form-group {
+    margin-bottom: 20px;
     color: aliceblue;
-}
-
-.form-style{
-    border-radius: 30px;
-    height: 30px;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-}
-
-.button{
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 30px;
-    height: 30px;
-    width: 30px;
-    border: 1px solid white;
-
-}
-
-.button img{
-    margin-bottom: 4px;
-    margin-right: 0.5px;
-}
-
-.formstylish{
-    margin-right: -440px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-form{
-    width: 50%;
-    margin:  0 auto;
-    margin-top: 90px;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    border-radius: 10px;
-    color: white;
-    background-color: rgba(255, 166, 0, 0.589);
-}
-
-.left{
-    width: 60%;
-    float: left;
-    height: 130px;
-}
-
-.right{
-    height: 130px;
-    width: 40%;
-    float: left;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-   
-}
-
-.orderCost{
-    background-color: #f7f7f7;
-    font-size: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  }
+  
+  .topping-option {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: right;
+  }
+  
+  .topping-card {
+    width: 70px;
     border-radius: 5px;
-    color: orange;
-}
 
-.order-item{
+  }
+  
+  .topping-card img {
     width: 100%;
     height: 50px;
-    background-color: #f7f7f7;
+    object-fit: cover;
     border-radius: 5px;
-    margin-top: 15px;
-}
+  }
+  
+  .topping-card .card-body {
+    padding: 10px;
+    margin-left: 13px;
+  }
 
+  .topping-card .card-body input{
+      margin-top: 7px;
+  }
 
-
-input{
-    margin-top: 15px;
-}
-
-select{
-    margin-top: 15px;
-}
-
-.btn{
-    margin-top: 15px;
-}
-
-.base-options{
-    width: 33%;
-    height: 100px;
-    margin-top: 20px;
-    padding-left: 20px;
+.form-check{
     float: left;
+    margin-left: 20px;
+    padding-bottom: 50px;
 }
 
-.base-options h3{
-   margin-left:  -20px;
-   margin-bottom: 20px;
+.form-group2{
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-.toppings{
-    width: 66%;
-    margin-top: 20px;
-    float: left;
-    padding-left: 20px;
+.costi{
+    width: 200px;
+    height: 70px;
+    background-color: aqua;
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-left: 35px;
+    margin-right: 100px;
+    margin-left: 700px;
+    margin-top: -500px;
 }
 
-.toppings h3{
-    margin-left:  -20px;
-    margin-bottom: 20px;
+.butistyle{
+    margin-bottom: -950px;
+    margin-left: 750px;
 }
 
-.top-check{
-    width: 33%;
-    float: left;
+.form-group2 label{
+    color: aliceblue;
+
 }
 
-
-.output{
-    width: 50%;
-    margin:  0 auto;
-    margin-top: 50px;
+.toppingson{
+    color: aliceblue;
 }
-
