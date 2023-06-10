@@ -18,8 +18,11 @@ nav{
 }
 
 .container{
+    height: 800px;
     margin-left: 50px;
-    background-color: black;
+    background-color: rgb(150, 57, 3);
+    padding-left: 60px;
+    padding-top: 20px;
 }
 
 .form-group {

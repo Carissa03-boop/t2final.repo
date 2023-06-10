@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Pangolin&family=Playfair+Display:wght@400;800&family=Wendy+One&display=swap" rel="stylesheet">
+
+    <script src="js/buildasub.js"></script>
+
     </head>
 
   <body>
@@ -64,7 +67,7 @@
 
     <div class="container">
       <h2>Sandwich Order Form</h2>
-      <form>
+      <form id="sandwichForm">
         <!-- Section 1: Sandwich Name -->
         <div class="form-group">
           <label for="sandwichName">Sandwich Name:</label>
@@ -88,7 +91,7 @@
             <div class="col-md-16">
               <div class="topping-option">
                 <div class="card topping-card">
-                  <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="salami">
+                  <img src="/ROOT/assets/Salame.jpeg" alt="salami">
                   <div class="card-body">
                     <input type="checkbox" class="form-check-input" name="toppings" id="salami" value="salami" data-cost="20">
                     <label class="form-check-label" for="salami">Salami</label>
@@ -97,7 +100,7 @@
               </div>
               <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="Topping 1">
+                    <img src="/ROOT/assets/Ham.jpeg" alt="Topping 1">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="ham" value="ham" data-cost="15">
                       <label class="form-check-label" for="ham">Ham</label>
@@ -106,7 +109,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="bluecheese">
+                    <img src="assets/Blue Cheese.jpeg"    alt="blueCheese">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="blueCheese" value="bluecheese" data-cost="18">
                       <label class="form-check-label" for="blueCheese">Blue Cheese</label>
@@ -115,7 +118,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="goatcheese">
+                    <img src="/ROOT/assets/Goat Cheese.jpeg" alt="goatcheese">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="goatcheese" value="goatcheese" data-cost="16">
                       <label class="form-check-label" for="goatcheese">Goat Cheese</label>
@@ -124,7 +127,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="mozzarella">
+                    <img src="/ROOT/assets/Mozzarella.jpeg" alt="mozzarella">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="mozzarella" value="mozzarella" data-cost="16">
                       <label class="form-check-label" for="mozzarella">Mozzarella</label>
@@ -133,7 +136,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="prosciutto">
+                    <img src="/ROOT/assets/Prosciutto.jpeg" alt="prosciutto">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="prosciutto" value="prosciutto" data-cost="18">
                       <label class="form-check-label" for="prosciutto">Prosciutto</label>
@@ -142,7 +145,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="bacon">
+                    <img src="/ROOT/assets/bacon.jpeg" alt="bacon">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="bacon" value="bacon" data-cost="20">
                       <label class="form-check-label" for="bacon">Bacon</label>
@@ -151,7 +154,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="egg">
+                    <img src="/ROOT/assets/egg.jpeg" alt="egg">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="egg" value="egg" data-cost="10">
                       <label class="form-check-label" for="egg">Egg</label>
@@ -160,7 +163,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="feta">
+                    <img src="/ROOT/assets/feta.jpeg" alt="feta">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="feta" value="feta" data-cost="16">
                       <label class="form-check-label" for="feta">Feta</label>
@@ -169,7 +172,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="anchovies">
+                    <img src="/ROOT/assets/anchovies.jpeg" alt="anchovies">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="anchovies" value="anchovies" data-cost="23">
                       <label class="form-check-label" for="anchovies">Anchovies</label>
@@ -178,7 +181,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="olives">
+                    <img src="/ROOT/assets/olives.jpeg" alt="olives">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="olives" value="olives" data-cost="12">
                       <label class="form-check-label" for="olives">Olives</label>
@@ -187,7 +190,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="chillies">
+                    <img src="/ROOT/assets/chillies.jpeg" alt="chillies">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="chillies" value="chillies" data-cost="15">
                       <label class="form-check-label" for="chillies">Chillies</label>
@@ -196,7 +199,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="garlic">
+                    <img src="/ROOT/assets/garlic.jpeg" alt="garlic">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="garlic" value="garlic" data-cost="15">
                       <label class="form-check-label" for="garlic">Garlic</label>
@@ -205,7 +208,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="redpepper">
+                    <img src="/ROOT/assets/redpepper.jpeg" alt="redpepper">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="redpepper" value="redpepper" data-cost="15">
                       <label class="form-check-label" for="redpepper">Red Pepper</label>
@@ -214,7 +217,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="greenpepper">
+                    <img src="/ROOT/assets/green pepper.jpeg" alt="greenpepper">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="greenpepper" value="greenPepper" data-cost="15">
                       <label class="form-check-label" for="greenPepper">Green Pepper</label>
@@ -223,7 +226,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="chives">
+                    <img src="/ROOT/assets/chives.jpeg" alt="chives">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="chives" value="chives" data-cost="15">
                       <label class="form-check-label" for="chives">Chives</label>
@@ -232,7 +235,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="pickles">
+                    <img src="/ROOT/assets/pickle.jpeg" alt="pickles">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="pickles" value="pickles" data-cost="18">
                       <label class="form-check-label" for="pickles">Pickles</label>
@@ -241,7 +244,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="pineapple">
+                    <img src="/ROOT/assets/pinaple.jpeg" alt="pineapple">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="pineapple" value="pineapple" data-cost="15">
                       <label class="form-check-label" for="pineapple">Pine Apple</label>
@@ -250,7 +253,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="pesto">
+                    <img src="/ROOT/assets/pesto.jpeg" alt="pesto">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="pesto" value="pesto" data-cost="17">
                       <label class="form-check-label" for="pesto">Pesto</label>
@@ -259,7 +262,7 @@
                 </div>
                 <div class="topping-option">
                   <div class="card topping-card">
-                    <img src="/3c7ee12d-f0f2-466e-bc46-c34101cf352f-profile_image-300x300.png" alt="avo">
+                    <img src="/ROOT/assets/Avo.jpeg" alt="avo">
                     <div class="card-body">
                       <input type="checkbox" class="form-check-input" name="toppings" id="avo" value="avo" data-cost="20">
                       <label class="form-check-label" for="avo">Avo</label>
