@@ -269,7 +269,6 @@
                     </div>
                   </div>
                 </div>
-              <!-- Add more topping options here -->
             </div>
           </div>
         </div>
@@ -280,23 +279,23 @@
         <div class="form-group2">
           <label>Sauces:</label>
           <div class="col-md-10">
-              <div class="form-check">
+              <div class="sauce-option">
                 <input type="checkbox" class="form-check-input" name="toppings" id="creamyhorseradish" value="creamyhorseradish" data-cost="20">
                   <label class="form-check-label" for="creamyhorseradish">Creamy Horseradish</label>
                 </div>
-                <div class="form-check">
+                <div class="sauce-option">
                   <input type="checkbox" class="form-check-input" name="toppings" id="béarnaise" value="béarnaise" data-cost="17">
                   <label class="form-check-label" for="béarnaise">Béarnaise</label>
                 </div>
-                <div class="form-check">
+                <div class="sauce-option">
                   <input type="checkbox" class="form-check-input" name="toppings" id="garlicaioli" value="garlicaioli" data-cost="18">
                   <label class="form-check-label" for="garlicaioli">Garlic Aioli</label>
                 </div>
-                <div class="form-check">
+                <div class="sauce-option">
                   <input type="checkbox" class="form-check-input" name="toppings" id="mayo" value="mayo" data-cost="16">
                   <label class="form-check-label" for="mayo">Mayo</label>
                 </div>
-                <div class="form-check">
+                <div class="sauce-option">
                   <input type="checkbox" class="form-check-input" name="toppings" id="mustard" value="mustard" data-cost="18">
                   <label class="form-check-label" for="mustard">Mustard</label>
                 </div>
@@ -309,7 +308,7 @@
               </div>
               
               <!-- Submit Button -->
-              <button type="button" class="btn btn-primary butistyle">Make Sandwich</button> 
+              <button type="button" class="btn btn-primary butistyle"  onclick="makeSandwich()">Make Sandwich</button> 
           </div>
       </form>
     </div>

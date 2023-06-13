@@ -18,27 +18,38 @@ makeSandwich = () =>{
      console.log("sandwichCost")
 
 
-   //  let toppingOptions = document.getElementsByName("toppings");
-   //  let topArray = [];
-   //  for(let i = 0; i < toppingOptions.length; i++){
-   //      if(toppingOptions[i].checked){
-   //          topArray.push(toppingOptions[i].value)
-   //          sandwichCost = sandwichCost + +toppingOptions[i].dataset.cost
+    let toppingOptions = document.getElementsByName("toppings");
+    let topArray = [];
+    for(let i = 0; i < toppingOptions.length; i++){
+        if(toppingOptions[i].checked){
+            topArray.push(toppingOptions[i].value)
+            sandwichCost = sandwichCost + +toppingOptions[i].dataset.cost
 
-   //          console.log("topArray")
-   //      }
-   //  }
+            console.log("topArray");
+        }
+    }
 
-//     sandwichOrder.push({
-//         sandwichName: sandwichName,
-//         sandwichBread: baseBread,
-//         sandwichToppings: topArray,
-//         totalCost: sandwichCost
-//     })
+    let toppingOptions = document.getElementsByName("toppings");
+    let topArray = [];
+    for(let i = 0; i < toppingOptions.length; i++){
+        if(toppingOptions[i].checked){
+            topArray.push(toppingOptions[i].value)
+            sandwichCost = sandwichCost + +toppingOptions[i].dataset.cost
+
+            console.log("topArray");
+        }
+    }
+
+    sandwichOrder.push({
+        sandwichName: sandwichName,
+        sandwichBread: baseBread,
+        sandwichToppings: topArray,
+        totalCost: sandwichCost
+    })
 
 
-//     console.log(sandwichOrder)
+    console.log(sandwichOrder);
 
-//     document.getElementById("sandwichOrder").reset
+    document.getElementById("sandwichOrder").reset
 
 }
