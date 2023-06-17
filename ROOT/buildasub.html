@@ -66,17 +66,17 @@
     </header>
 
     <div class="container">
-      <h2>Sandwich Order Form</h2>
-      <form id="sandwichForm">
+      <h2>Build your Sub :</h2>
+      <form id="sandwichForm" onchange="currentCost()">
         <!-- Section 1: Sandwich Name -->
         <div class="form-group">
-          <label for="sandwichName">Sandwich Name:</label>
+          <label for="sandwichName" class="namer"><h5>Sandwich Name:</h5></label>
           <input type="text" class="form-control" id="sandwichName" placeholder="Enter sandwich name" style="width: 30%;">
         </div>
         
         <!-- Section 2: Base Bread -->
         <div class="form-group">
-          <label for="baseBread">Base Bread:</label>
+          <label for="baseBread" class="namer"><h5>Base Bread:</h5></label>
           <select class="form-control" id="baseBread" style="width: 30%;">
             <option>White Bread</option>
             <option>Wheat Bread</option>
@@ -86,7 +86,7 @@
         
         <!-- Section 3: Toppings -->
         <div class="form-group1">
-          <label class="toppingson">Toppings:</label>
+          <label class="toppingson"><h5>Toppings:</h5></label>
           <div class="row">
             <div class="col-md-16">
               <div class="topping-option">
@@ -277,40 +277,54 @@
         
         <!-- Section 4: Sauces -->
         <div class="form-group2">
-          <label>Sauces:</label>
+          <label><h5>Sauces:</h5></label>
           <div class="col-md-10">
               <div class="sauce-option">
-                <input type="checkbox" class="form-check-input" name="toppings" id="creamyhorseradish" value="creamyhorseradish" data-cost="20">
+                <input type="checkbox" class="form-check-input" name="sauces" id="creamyhorseradish" value="creamyhorseradish" data-cost="20">
                   <label class="form-check-label" for="creamyhorseradish">Creamy Horseradish</label>
                 </div>
                 <div class="sauce-option">
-                  <input type="checkbox" class="form-check-input" name="toppings" id="béarnaise" value="béarnaise" data-cost="17">
+                  <input type="checkbox" class="form-check-input" name="sauces" id="béarnaise" value="béarnaise" data-cost="17">
                   <label class="form-check-label" for="béarnaise">Béarnaise</label>
                 </div>
                 <div class="sauce-option">
-                  <input type="checkbox" class="form-check-input" name="toppings" id="garlicaioli" value="garlicaioli" data-cost="18">
+                  <input type="checkbox" class="form-check-input" name="sauces" id="garlicaioli" value="garlicaioli" data-cost="18">
                   <label class="form-check-label" for="garlicaioli">Garlic Aioli</label>
                 </div>
                 <div class="sauce-option">
-                  <input type="checkbox" class="form-check-input" name="toppings" id="mayo" value="mayo" data-cost="16">
+                  <input type="checkbox" class="form-check-input" name="sauces" id="mayo" value="mayo" data-cost="16">
                   <label class="form-check-label" for="mayo">Mayo</label>
                 </div>
                 <div class="sauce-option">
-                  <input type="checkbox" class="form-check-input" name="toppings" id="mustard" value="mustard" data-cost="18">
+                  <input type="checkbox" class="form-check-input" name="sauces" id="mustard" value="mustard" data-cost="18">
                   <label class="form-check-label" for="mustard">Mustard</label>
                 </div>
-                <!-- Add more sauce checkboxes here -->
               </div>
               
               <!-- Cost Display -->
               <div id="costDisplay" class="costi">
-                <strong>Total Cost:</strong> $<span id="totalCost">0.00</span>
+                <strong><h2>Total Cost:</h2>
+                </strong> R<span id="currentCost">0.00</span>
               </div>
               
               <!-- Submit Button -->
-              <button type="button" class="btn btn-primary butistyle"  onclick="makeSandwich()">Make Sandwich</button> 
+              <button type="button"  class="btn btn-primary butistyle"  onclick="makeSandwich(); displayOrder()" >Make Sandwich</button> 
           </div>
       </form>
+    </div>
+
+    <div class="orderoutput">
+      <div class="outHeader">
+        <h3>Current Order:</h3>
+        <hr class="my-4">
+        <div class="totalOrder"><h3 id="orderTotal">R0.00</h3></div>
+        <hr class="my-4">
+      </div>
+
+      <div id="orders">
+
+      </div>
+      
     </div>
 
   <footer>biggy</footer>
