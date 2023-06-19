@@ -1,9 +1,11 @@
 body{
+    width: 100%;
     background-image: url(../assets/f1e6ba146633325.62b3a32a52f1f.jpg);
     background-size: cover;
 }
 
 footer {
+    width: 100%;
     background-color: #2b2b2b;
     padding: 20px;
     display: flex;
@@ -35,6 +37,7 @@ footer {
   
 
 nav{
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.589);
     height: 100px;
 }
