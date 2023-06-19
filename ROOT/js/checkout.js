@@ -37,7 +37,7 @@ displayCheck = () => {
 
 resetReturn = () => {
     localStorage.removeItem('order');
-    window.location.href = '/ROOT/buildasub'
+    window.location.href = '/ROOT/index.html'
 }
 
 promoNumber = () => {
