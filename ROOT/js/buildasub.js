@@ -129,3 +129,9 @@ displayOrder = () => {
     }
 
 }
+
+checkOut  = () => {
+    let data = JSON.stringify(sandwichOrder)
+    localStorage.setItem('order', data)
+    window.location.href = '/ROOT/checkout.html'
+}

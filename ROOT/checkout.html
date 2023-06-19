@@ -16,11 +16,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Pangolin&family=Playfair+Display:wght@400;800&family=Wendy+One&display=swap" rel="stylesheet">
+
+    <script src="js/checkout.js"></script>
     
 
     </head>
 
-  <body>
+  <body onload="displayCheck()">
 
     <header class="header">
 
@@ -44,17 +46,6 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/ROOT/checkout.html">Checkout</a>
               </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-style mr-sm-2" type="search" placeholder=" Search" aria-label="Search">
@@ -62,29 +53,64 @@
           </form>
         </div>
       </nav>
-
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card-body">
-              This is some text within a card body.
-            </div>
-          </div>
-            
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+      <div class="container-flued">
+        <div class="row" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+          <div class="col-md-6" style="padding-right: 0px;padding-left: 0px;">
+            <div class="card" style="width: 100%; background-color: rgb(215, 206, 206);height: 700px;margin-top: -1px;margin-bottom: -50px;margin-right: 0px;">
+              <div class="card-body">
+                <div class="checkLeft">
+                  <div class="checkLeft">
+                    <h1 style="font-family: 'Wendy One', sans-serif;margin-bottom: 30px;">Your Order:</h1>
+                    <div id="checkoutOrder">
+                      
+                    </div>
                 </div>
               </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6" style="padding-left: 0px;padding-right: 0px;">
+            <div class="card" style="width: 100%; background-color: rgb(136, 122, 122);height: 700px;margin-top: -1px;margin-right: 0px;padding-left: 0px;padding-right: 0px;">
+              <div class="card-body" style="margin-top: px;">
+                <h3 style="font-family: 'Wendy One', sans-serif;">Checkout:</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group" style="padding-top: 30px;">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group" style="padding-top: 30px;">
+                      <label for="name">Email</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group" style="padding-top: 30px;">
+                      <label for="name">Card Number</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group" style="padding-top: 30px;">
+                      <label for="name">Expiary Date</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                  </div>
+                </div>
+                <h4 style="font-family: 'Wendy One', sans-serif; padding-bottom: 10px;text-align: center;padding-top: 40px;">Enter a Promo Code</h4>
+                <input  style="width: 50%;margin-bottom: 10px;margin-left: 195px;" type="text" class="form-control" placeholder="#0000" id="promo">
+                <button style="margin-left: 300px;" class="btn btn-primary" type="button" onclick="promoNumber()">Add Discount</button>
+                <hr class="my-4" style="width: 50%;float: left;  margin-top: 1px;margin-bottom: 1px;">
+                <h5 style="margin-bottom: -1px;padding-top: 49px;font-family: 'Wendy One', sans-serif;">Your Total :</h5>
+                <h3 id="totalOut" class="total" style="margin-bottom: -10px;">R0.00</h3>
+                <hr class="my-4" style="width: 50%;float: left;"> 
+        
+                <button style="float: right;margin-bottom: 10px;" class="btn btn-primary" type="button" onclick="resetReturn()">Make Payment</button>  
+        
+        
+              </div>
             </div>
           </div>
         </div>
@@ -92,7 +118,7 @@
   </header>
 
 
-  <footer>
+  <footer style="margin-top: 18px;">
     <div class="section">
       <div class="Logi">
         <img src="/ROOT/assets/logo.png" style="width: 100px; height: 100px;">
@@ -113,13 +139,13 @@
         <a href="https://www.instagram.com/" target="_blank">
           <img src="/ROOT/assets/Instagram-Icon.png" alt="Instagram Icon" width="30" height="30">
         </a>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.facebook.com/" target="_blank">
           <img src="/ROOT/assets/Facebook_f_logo_(2019).svg.png" alt="Instagram Icon" width="30" height="30">
         </a>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.youtube.com/" target="_blank">
           <img src="/ROOT/assets/YouTube_full-color_icon_(2017).svg.png" alt="Instagram Icon" width="30" height="30">
         </a>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://twitter.com/?lang=en-za" target="_blank">
           <img src="/ROOT/assets/twitter.png" alt="Instagram Icon" width="30" height="30">
         </a>
       </div>

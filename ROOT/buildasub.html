@@ -45,17 +45,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/ROOT/checkout.html">Checkout</a>
               </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 formstylish">
             <input class="form-style mr-sm-2" type="search" placeholder=" Search" aria-label="Search">
@@ -80,7 +69,7 @@
           <select class="form-control" id="baseBread" style="width: 30%;">
             <option>White Bread</option>
             <option>Wheat Bread</option>
-            <option>Multi-grain Bread</option>
+            <option>Multi-grain</option>
           </select>
         </div>
         
@@ -306,8 +295,6 @@
                 <strong><h2>Total Cost:</h2>
                 </strong> R<span id="currentCost">0.00</span>
               </div>
-              
-              <!-- Submit Button -->
               <button type="button"  class="btn btn-primary butistyle"  onclick="makeSandwich(); displayOrder()" >Make Sandwich</button> 
           </div>
       </form>
@@ -319,6 +306,10 @@
         <hr class="my-4">
         <div class="totalOrder"><h3 id="orderTotal">R0.00</h3></div>
         <hr class="my-4">
+        <div class="button-con">
+          <button style="margin-top: 300px;margin-left: 880px;" class="btn btn-primary" type="button" onclick="checkOut()">Proceed to Checkout!</button>    
+        </div>
+  
       </div>
 
       <div id="orders">
@@ -348,13 +339,13 @@
           <a href="https://www.instagram.com/" target="_blank">
             <img src="/ROOT/assets/Instagram-Icon.png" alt="Instagram Icon" width="30" height="30">
           </a>
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.facebook.com/" target="_blank">
             <img src="/ROOT/assets/Facebook_f_logo_(2019).svg.png" alt="Instagram Icon" width="30" height="30">
           </a>
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.youtube.com/" target="_blank">
             <img src="/ROOT/assets/YouTube_full-color_icon_(2017).svg.png" alt="Instagram Icon" width="30" height="30">
           </a>
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://twitter.com/?lang=en-za" target="_blank">
             <img src="/ROOT/assets/twitter.png" alt="Instagram Icon" width="30" height="30">
           </a>
         </div>
